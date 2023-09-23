@@ -53,7 +53,7 @@ function generateSingleCard2dArray(inputs) {
     let i = 0;
     let res = new Array(5)
     for (let j = 0; j < 5; j++) {
-        res[j] = new Array(5)
+        res[j] = new Array(5).fill('')
     }
 
     for (let val of shuffleArray(inputs).slice(0, 25)) {
