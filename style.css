@@ -1,0 +1,29 @@
+@media print {
+    .input {
+        display: none;
+    }
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+thead {
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+td {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card {
+    padding: 1rem;
+}

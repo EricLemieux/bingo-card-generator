@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <section class="input">
+        <h1>Bingo Generator</h1>
+
+        <form>
+            <label>Inputs
+            <textarea id="input-text">
+1
+2
+3
+4
+5
+            </textarea>
+            </label>
+
+            <label>Number of cards
+            <input id="number-of-cards" type="number" value="1"></label>
+
+            <button onclick="generateCards()" type="button">Generate</button>
+        </form>
+    </section>
+    <section id="cards-target" class="cards"></section>
+</body>
+</html>
