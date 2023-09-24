@@ -2,6 +2,16 @@
     .input {
         display: none;
     }
+
+    .card {
+        page-break-after: always;
+    }
+}
+
+@media screen {
+    body {
+        background-color: #f3f3f3;
+    }
 }
 
 table {
@@ -10,6 +20,7 @@ table {
     border-spacing: 0;
     table-layout: fixed;
     width: 100%;
+    background-color: white;
 }
 
 thead {
@@ -26,4 +37,35 @@ td {
 
 .card {
     padding: 1rem;
+}
+
+textarea {
+    overflow: scroll;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1rem;
 }

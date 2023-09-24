@@ -8,19 +8,41 @@
     <section class="input">
         <h1>Bingo Generator</h1>
 
+        <h2>Instructions</h2>
+        <p>Enter all the available options, select the number of separate cards to generate, and hit the <em>Generate</em> button. Review the generated cards, and if you are happy with your results print the page (Control + P).</p>
+
         <form>
-            <label>Inputs
-            <textarea id="input-text">
+            <label for="input-text">Inputs</label>
+            <textarea id="input-text" rows="25" cols="50">
 1
 2
 3
 4
 5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
             </textarea>
-            </label>
 
-            <label>Number of cards
-            <input id="number-of-cards" type="number" value="1"></label>
+            <label for="number-of-cards">Number of cards</label>
+            <input id="number-of-cards" type="number" value="3">
 
             <button onclick="generateCards()" type="button">Generate</button>
         </form>
