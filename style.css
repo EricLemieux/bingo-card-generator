@@ -14,23 +14,36 @@
     }
 }
 
+body {
+    font-family: sans-serif;
+}
+
 table {
-    border: 1px solid black;
+    border: 0.5rem solid #f30000;
+    border-radius: 10px;
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
     width: 100%;
     background-color: white;
+    font-weight: bold;
 }
 
 thead {
-    background-color: lightgray;
+    background-color: #f30000;
     font-weight: bold;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
 }
 
-td {
-    border: 2px solid black;
+thead td {
+    text-align: center;
+    padding: 1rem;
+}
+
+tbody td {
+    border: 2px solid #f30000;
     padding: 1rem;
     text-align: center;
 }
@@ -68,4 +81,5 @@ button {
     border-radius: 5px;
     color: white;
     margin-top: 1rem;
+    text-transform: uppercase;
 }
