@@ -1,3 +1,7 @@
+:root {
+    --card-accent: #f30000;
+}
+
 @media print {
     .input {
         display: none;
@@ -19,7 +23,7 @@ body {
 }
 
 table {
-    border: 0.5rem solid #f30000;
+    border: 0.5rem solid var(--card-accent);
     border-radius: 10px;
     border-collapse: collapse;
     border-spacing: 0;
