@@ -1,3 +1,8 @@
+class CardOptions {
+    inputs
+    shouldIncludeFreeSpace = false
+}
+
 function generateCards() {
     // Get the target
     let target = document.querySelector('#cards-target')
@@ -11,14 +16,21 @@ function generateCards() {
     // Get the number of cards to generate
     let numberOfCards = document.querySelector('#number-of-cards').value
 
+    // Get if the cards should include a free space at the centre
+    let shouldIncludeFreeSpace = document.querySelector('#should-include-free-space').checked
+
+    let options = new CardOptions();
+    options.inputs = input;
+    options.shouldIncludeFreeSpace = shouldIncludeFreeSpace
+
     // Generate the cards
     for (let i = 0; i < numberOfCards; i++) {
         // Add the cards to the document
-        target.append(generateSingleCard(input))
+        target.append(generateSingleCard(options))
     }
 }
 
-function generateSingleCard(inputs) {
+function generateSingleCard(options) {
     let div = document.createElement('div')
     let table = document.createElement('table')
     let thead = document.createElement('thead')
@@ -31,7 +43,12 @@ function generateSingleCard(inputs) {
     }
     table.append(thead)
 
-    let data = generateSingleCard2dArray(inputs)
+    let data = generateSingleCard2dArray(options.inputs)
+
+    if (options.shouldIncludeFreeSpace) {
+        data[2][2] = 'Free Space'
+    }
+
     for (let i in data) {
         let tr = document.createElement('tr')
         for (let j in data[i]) {
