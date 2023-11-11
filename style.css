@@ -78,6 +78,10 @@ form label {
     font-size: 1.5rem;
 }
 
+.form-input-wrapper {
+    display: flex;
+}
+
 button {
     padding: 1rem;
     font-size: 1.5rem;

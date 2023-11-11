@@ -44,8 +44,10 @@
             <label for="number-of-cards">Number of cards</label>
             <input id="number-of-cards" type="number" value="3">
 
-            <label for="should-include-free-space">Should the cards include a free space?</label>
-            <input id="should-include-free-space" type="checkbox">
+            <div class="form-input-wrapper">
+                <label for="should-include-free-space">Should the cards include a free space?</label>
+                <input id="should-include-free-space" type="checkbox">
+            </div>
 
             <button onclick="generateCards()" type="button">Generate</button>
         </form>
